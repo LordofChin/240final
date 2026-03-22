@@ -49,7 +49,7 @@ public class GameServer
 						break;
 					case "d": System.out.println("RIGHT");
 						break;
-					default: System.out.printf("%s: %s\n", users.getUser.getUsername(ip), message);
+					default: System.out.printf("%s: %s\n", users.getUser().getUsername(ip), message);
 						break;
 
 				}
