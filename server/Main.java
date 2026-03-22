@@ -126,6 +126,10 @@ public class User
 	{
 		return !(created && instantiated);
 	}
+	public String getUsername()
+	{
+		return this.username;
+	}
 
 	@Override
 	public String toString() {
