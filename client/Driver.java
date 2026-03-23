@@ -1,7 +1,7 @@
 import java.net.*;
 import java.util.Scanner;
 
-public class GameClient {
+public class Driver {
     public static void main(String[] args) {
         String serverIP = "3.21.213.171";
         int port = 3478;
@@ -13,6 +13,7 @@ public class GameClient {
             System.out.println("Connected to server. Type a message and hit Enter:");
 
             while (true) {
+		
                 String input = scanner.nextLine();
                 if (input.equalsIgnoreCase("exit")) break;
 
