@@ -18,16 +18,6 @@ public class Driver
 			DatagramReceiver receiver = new DatagramReceiver(socket, new ServerHandler(socket));
 			receiver.start();
 
-
-			System.out.println("Server is running on port " + port);
-			 // Keep the main thread alive to prevent the server from exiting
-			try {
-				Thread.currentThread().join();
-			} catch (InterruptedException e) {
-				System.err.println("Server interrupted: " + e.getMessage());
-			}
-
-			
     }
 }
 
